@@ -17,13 +17,11 @@ const MEALS = [
 
 // ── AI LOOKUP ────────────────────────────────────────────────────
 async function aiLookup(foodName, portion) {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+  await fetch("/api/claude", {
     method: "POST",
    headers: { 
   "Content-Type": "application/json",
-  "x-api-key": "sk-ant-api03-KyekEya...(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)",
-  "anthropic-version": "2023-06-01"
-},
+   }
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
       max_tokens: 200,
