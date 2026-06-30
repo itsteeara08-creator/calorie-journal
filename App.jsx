@@ -17,7 +17,7 @@ const MEALS = [
 
 // ── AI LOOKUP ────────────────────────────────────────────────────
 async function aiLookup(foodName, portion) {
-  await fetch("/api/claude", {
+  await fetch("/.netlify/functions/claude", {
     method: "POST",
    headers: { 
   "Content-Type": "application/json",
