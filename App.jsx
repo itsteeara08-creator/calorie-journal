@@ -21,7 +21,7 @@ async function aiLookup(foodName, portion) {
     method: "POST",
    headers: { 
   "Content-Type": "application/json",
-  "x-api-key": import.meta.env.VITE_ANTHROPIC_KEY,
+  "x-api-key": "sk-ant-api03-KyekEya...(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)",
   "anthropic-version": "2023-06-01"
 },
     body: JSON.stringify({
